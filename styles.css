@@ -10,3 +10,12 @@
 .preview-real .screen-crop img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
 .preview-real .preview-foot{line-height:1.4;margin-top:12px}
 @media(max-width:620px){.preview-real{padding:13px}.preview-real .screen-crop{border-radius:12px}}
+
+/* Compact authentic screenshot preview: independent of screenshot dimensions. */
+.hero-inner > * {min-width:0;}
+.preview-shell {width:100%;min-width:0;max-width:520px;margin-inline:auto;}
+.preview-real {width:100%;max-width:460px;min-width:0;overflow:hidden;}
+.preview-real .screen-crop {position:relative;display:block;width:100%;height:340px;max-height:340px;overflow:hidden;border-radius:14px;background:#112a2e;}
+.preview-real .screen-crop img {display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:initial;object-position:top;position:relative;}
+@media(max-width:850px){.hero-inner{grid-template-columns:minmax(0,1fr)}.preview-shell{max-width:420px}}
+@media(max-width:620px){.preview-shell{max-width:370px;padding:14px}.preview-real{padding:14px}.preview-real .screen-crop{height:300px;max-height:300px}.preview-real .preview-head{font-size:13px}.preview-real .preview-count{font-size:10px}}

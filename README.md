@@ -1,7 +1,7 @@
-Storli website — authentic screenshot fix
+# Storli — compact authentic screenshot fix
 
-This version keeps the original website card and uses the REAL Home screenshot provided by you, with only the iOS status bar and lower portion cropped to keep it suitable for the preview. No invented products, no fake phone border, and no stretched image.
+This version keeps the original Storli homepage and genuine Home screenshot, but caps the image viewport at 340px (300px on small screens). The screenshot is cropped naturally from the top, not stretched or recreated. The image remains unchanged.
 
-Upload index.html and styles.css to the repository root, and assets/storli-home-original.webp to assets/. Commit to main to deploy. Other files are included for completeness.
+Upload **styles.css** to the repository root, replacing the existing file. No other files need changing if you already uploaded the previous authentic-screenshot edition.
 
-Note: The real screenshot shows your own inventory and activity, so review it before publishing.
+For a clean reinstall, the ZIP contains the complete website. GitHub should preserve the `assets/` directory.
