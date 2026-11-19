@@ -2,3 +2,6 @@
 
 /* Production app icon extracted from the supplied launch screenshot. */
 .brand-icon{display:block;object-fit:cover;background:transparent;border-radius:10px;box-shadow:0 7px 18px #0b2a2f20;flex-shrink:0}.brand-icon:after{content:none}
+
+/* App showcase: sample inventory history and no iOS status bar. */
+.showcase-shell{padding:0;min-width:0}.showcase-shell:before{inset:8% 3%;transform:rotate(-4deg)}.showcase-figure{position:relative;margin:0;border-radius:25px;overflow:hidden;box-shadow:0 30px 65px #0b2a2f22;background:#082e32}.showcase-figure img,.wide-showcase img{display:block;width:100%;height:auto}.showcase-figure figcaption,.wide-showcase figcaption{font-size:12px;color:#718a88;text-align:center;padding:12px;background:#f4f6f6}.wide-showcase{max-width:980px;margin:28px auto 0;border-radius:24px;overflow:hidden;box-shadow:0 18px 48px #0b2a2f19;background:#092d32}.app-showcase-section{padding-top:30px}.showcase-shell img{aspect-ratio:3/2;object-fit:cover}@media(max-width:850px){.showcase-shell{max-width:650px;margin:auto;width:100%}}

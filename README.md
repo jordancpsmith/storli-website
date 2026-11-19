@@ -27,13 +27,9 @@ No DNS records for iCloud Mail need to be modified to publish the website. Prese
 - The privacy page remains an incomplete draft and **must not be used as the final App Store privacy policy**.
 - No analytics, trackers, external fonts or third-party scripts are included.
 
-## App icon update — November 2026
-The actual Storli app icon has been cropped from the supplied iPhone launch screenshot and used for:
-- Header logo on the home, support and privacy pages
-- Browser favicon (`favicon.png`)
-- iOS Home Screen icon (`apple-touch-icon.png`)
 
-The source crop is approximately 183 × 183 pixels and has been resized for web use. Replace the assets with the original Xcode icon export when convenient for higher resolution.
-
-## Updating your existing live website from iPhone
-In GitHub, upload the changed `index.html`, `support.html`, `privacy.html`, `styles.css`, the new `favicon.png` and `apple-touch-icon.png` to the repository root. Also upload `storli-icon.png` **inside an `assets` folder** at the root. GitHub may require the desktop site or a computer to preserve the folder path. Once committed to `main`, Cloudflare Pages automatically redeploys.
+## Updated app showcase (November 2026)
+- `assets/storli-app-showcase.png` is an **illustrative recreation** based on the two provided Storli screenshots, with fictional sample entries replacing the owner's Recent Activity items and no visible iOS status bar. It is not an exact screenshot of the running app.
+- The homepage includes the showcase in its hero and in a dedicated feature section.
+- Upload the whole ZIP's contents to the root of the GitHub `storli-website` repository, preserving the `assets/` directory.
+- Check the Privacy page before publishing as an approved legal policy.
