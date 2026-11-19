@@ -1,7 +1,7 @@
-# Storli — compact authentic screenshot fix
+Storli website — complete replacement package.
 
-This version keeps the original Storli homepage and genuine Home screenshot, but caps the image viewport at 340px (300px on small screens). The screenshot is cropped naturally from the top, not stretched or recreated. The image remains unchanged.
+Upload the CONTENTS of this folder to the root of the GitHub storli-website repository, keeping assets/ as a folder. Replace existing index.html and styles.css. Existing support/privacy pages remain included.
 
-Upload **styles.css** to the repository root, replacing the existing file. No other files need changing if you already uploaded the previous authentic-screenshot edition.
+This package restores the real Storli icon and bold wordmark together, preserves the responsive screenshot crop and the original website design. Screenshot shows real inventory activity; no sample replacements are applied.
 
-For a clean reinstall, the ZIP contains the complete website. GitHub should preserve the `assets/` directory.
+Cloudflare Pages deploys after committing to main.
