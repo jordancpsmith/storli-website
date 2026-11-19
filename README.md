@@ -1,5 +1,7 @@
-Storli website — original layout with real app dashboard in the existing preview card.
+Storli website — authentic screenshot fix
 
-Upload index.html, styles.css and assets/home-dashboard-sample.webp to GitHub preserving folder paths. Other files are unchanged.
+This version keeps the original website card and uses the REAL Home screenshot provided by you, with only the iOS status bar and lower portion cropped to keep it suitable for the preview. No invented products, no fake phone border, and no stretched image.
 
-The iOS status bar is cropped. Recent activity entries are fictional and labeled as samples. The actual app interface is used without a fake phone frame.
+Upload index.html and styles.css to the repository root, and assets/storli-home-original.webp to assets/. Commit to main to deploy. Other files are included for completeness.
+
+Note: The real screenshot shows your own inventory and activity, so review it before publishing.

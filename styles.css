@@ -3,11 +3,10 @@
 /* Production app icon extracted from the supplied launch screenshot. */
 .brand-icon{display:block;object-fit:cover;background:transparent;border-radius:10px;box-shadow:0 7px 18px #0b2a2f20;flex-shrink:0}.brand-icon:after{content:none}
 
-/* Actual app screenshot inside the ORIGINAL website preview card; no phone frames. */
-.preview-real{transform:rotate(2deg);padding:18px;max-width:490px;margin-inline:auto}
+/* Authentic app screenshot in the original card, natural proportions. */
+.preview-real{transform:rotate(2deg);padding:18px;max-width:490px;margin-inline:auto;min-width:0}
 .preview-real .preview-head{padding:4px 4px 13px}
-.preview-real .screen-crop{width:100%;height:clamp(360px,42vw,510px);overflow:hidden;border-radius:16px;background:#112a2e}
-.preview-real .screen-crop img{display:block;width:100%;height:auto;object-fit:cover}
+.preview-real .screen-crop{width:100%;height:auto;overflow:hidden;border-radius:16px;background:#112a2e}
+.preview-real .screen-crop img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
 .preview-real .preview-foot{line-height:1.4;margin-top:12px}
-@media(max-width:850px){.preview-real .screen-crop{height:490px}}
-@media(max-width:620px){.preview-real .screen-crop{height:440px}.preview-real{padding:13px}}
+@media(max-width:620px){.preview-real{padding:13px}.preview-real .screen-crop{border-radius:12px}}
