@@ -19,3 +19,57 @@
 .preview-real .screen-crop img {display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:initial;object-position:top;position:relative;}
 @media(max-width:850px){.hero-inner{grid-template-columns:minmax(0,1fr)}.preview-shell{max-width:420px}}
 @media(max-width:620px){.preview-shell{max-width:370px;padding:14px}.preview-real{padding:14px}.preview-real .screen-crop{height:300px;max-height:300px}.preview-real .preview-head{font-size:13px}.preview-real .preview-count{font-size:10px}}
+
+
+/* Storli responsive screenshot fix */
+
+.hero-inner > * {
+  min-width: 0;
+}
+
+.preview-shell {
+  width: 100%;
+  max-width: 420px;
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.preview-real {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.preview-real .screen-crop {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #112a2e;
+}
+
+.preview-real .screen-crop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 620px) {
+  .preview-shell {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px;
+  }
+
+  .preview-real {
+    padding: 13px;
+  }
+}
+
