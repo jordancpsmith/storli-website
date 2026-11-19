@@ -5,3 +5,14 @@
 
 /* App showcase: sample inventory history and no iOS status bar. */
 .showcase-shell{padding:0;min-width:0}.showcase-shell:before{inset:8% 3%;transform:rotate(-4deg)}.showcase-figure{position:relative;margin:0;border-radius:25px;overflow:hidden;box-shadow:0 30px 65px #0b2a2f22;background:#082e32}.showcase-figure img,.wide-showcase img{display:block;width:100%;height:auto}.showcase-figure figcaption,.wide-showcase figcaption{font-size:12px;color:#718a88;text-align:center;padding:12px;background:#f4f6f6}.wide-showcase{max-width:980px;margin:28px auto 0;border-radius:24px;overflow:hidden;box-shadow:0 18px 48px #0b2a2f19;background:#092d32}.app-showcase-section{padding-top:30px}.showcase-shell img{aspect-ratio:3/2;object-fit:cover}@media(max-width:850px){.showcase-shell{max-width:650px;margin:auto;width:100%}}
+
+/* Layout repair: prevent media from expanding the page or hero grid. */
+.hero-inner{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}
+.hero-inner>*{min-width:0}
+img{max-width:100%}
+.app-showcase-section{padding-top:65px}
+.wide-showcase{width:100%;max-width:820px;margin:30px auto 0;border-radius:20px;overflow:hidden;background:#092d32;box-shadow:0 16px 42px #0b2a2f19}
+.wide-showcase img{display:block;width:100%;height:auto;object-fit:contain;aspect-ratio:auto}
+.wide-showcase figcaption{padding:12px 18px;font-size:12px;line-height:1.5}
+@media(max-width:850px){.hero-inner{grid-template-columns:minmax(0,1fr)}.wide-showcase{max-width:640px}}
+@media(max-width:620px){.app-showcase-section{padding-top:40px}.wide-showcase{border-radius:14px;margin-top:22px}.wide-showcase figcaption{font-size:11px}}
