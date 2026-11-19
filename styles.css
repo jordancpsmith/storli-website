@@ -3,25 +3,8 @@
 /* Production app icon extracted from the supplied launch screenshot. */
 .brand-icon{display:block;object-fit:cover;background:transparent;border-radius:10px;box-shadow:0 7px 18px #0b2a2f20;flex-shrink:0}.brand-icon:after{content:none}
 
-/* Authentic app screenshot in the original card, natural proportions. */
-.preview-real{transform:rotate(2deg);padding:18px;max-width:490px;margin-inline:auto;min-width:0}
-.preview-real .preview-head{padding:4px 4px 13px}
-.preview-real .screen-crop{width:100%;height:auto;overflow:hidden;border-radius:16px;background:#112a2e}
-.preview-real .screen-crop img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
-.preview-real .preview-foot{line-height:1.4;margin-top:12px}
-@media(max-width:620px){.preview-real{padding:13px}.preview-real .screen-crop{border-radius:12px}}
 
-/* Compact authentic screenshot preview: independent of screenshot dimensions. */
-.hero-inner > * {min-width:0;}
-.preview-shell {width:100%;min-width:0;max-width:520px;margin-inline:auto;}
-.preview-real {width:100%;max-width:460px;min-width:0;overflow:hidden;}
-.preview-real .screen-crop {position:relative;display:block;width:100%;height:340px;max-height:340px;overflow:hidden;border-radius:14px;background:#112a2e;}
-.preview-real .screen-crop img {display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:initial;object-position:top;position:relative;}
-@media(max-width:850px){.hero-inner{grid-template-columns:minmax(0,1fr)}.preview-shell{max-width:420px}}
-@media(max-width:620px){.preview-shell{max-width:370px;padding:14px}.preview-real{padding:14px}.preview-real .screen-crop{height:300px;max-height:300px}.preview-real .preview-head{font-size:13px}.preview-real .preview-count{font-size:10px}}
-
-
-/* Storli responsive screenshot fix */
+/* Storli app screenshot — clean responsive layout */
 
 .hero-inner > * {
   min-width: 0;
@@ -29,7 +12,7 @@
 
 .preview-shell {
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   min-width: 0;
   margin-inline: auto;
 }
@@ -38,14 +21,21 @@
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  box-sizing: border-box;
+  padding: 18px;
+  overflow: hidden;
+  transform: rotate(2deg);
+}
+
+.preview-real .preview-head {
+  padding: 4px 4px 13px;
 }
 
 .preview-real .screen-crop {
+  position: relative;
+  display: block;
   width: 100%;
-  height: auto;
-  max-height: none;
   aspect-ratio: 4 / 5;
+  height: auto;
   overflow: hidden;
   border-radius: 14px;
   background: #112a2e;
@@ -61,9 +51,19 @@
   object-position: center top;
 }
 
+.preview-real .preview-foot {
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
+@media (max-width: 850px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 620px) {
   .preview-shell {
-    width: 100%;
     max-width: 360px;
     padding: 14px;
   }
@@ -71,5 +71,16 @@
   .preview-real {
     padding: 13px;
   }
-}
 
+  .preview-real .screen-crop {
+    border-radius: 12px;
+  }
+
+  .preview-real .preview-head {
+    font-size: 13px;
+  }
+
+  .preview-real .preview-count {
+    font-size: 10px;
+  }
+}
